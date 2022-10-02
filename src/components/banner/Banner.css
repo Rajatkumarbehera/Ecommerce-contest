@@ -1,0 +1,50 @@
+.banner-container {    
+    margin: 40px 60px;
+    background-color: #9BEAF2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content {
+    margin-left: 126.5px;
+}
+
+.title1 {
+    font-size: 16px;
+    color: #2A7CC7;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.title2 {
+    font-size: 58px;
+    color: #252B42;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 20px;
+    color: #737373;
+    font-weight: 600;
+    margin-bottom: 30px;
+    width: 70%;
+    line-height: 30px;
+}
+
+.shop-button {
+    border-radius: 10px;
+    background-color: #23A6F0;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+}
+
+.shop-button:hover {
+    cursor: pointer;
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import Banner from "./components/banner/Banner";
+import Card from "./components/card/Card";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 import './App.css';
+import MyCartContext from "./context/Cartcontext";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [increment, setIncrement] = useState(0);
+
+    return (
+        <MyCartContext.Provider value={{ increment, setIncrement }}>
+            <>
+                <Navbar />
+                <Banner />
+                <Card />
+                <Footer />
+            </>
+        </MyCartContext.Provider>
+    );
 }
 
 export default App;
